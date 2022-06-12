@@ -4,7 +4,9 @@
   "description": "API RESTful using TypeScript, Node.js and MongoDB",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc -w",
+    "start": "node ./dist/program.js"
   },
   "repository": {
     "type": "git",
@@ -17,9 +19,11 @@
   },
   "homepage": "https://github.com/murilo-scapim/api-node-typescript#readme",
   "dependencies": {
+    "@types/mongoose": "^5.11.97",
     "body-parser": "^1.20.0",
     "express": "^4.18.1",
     "http-status": "^1.5.2",
+    "mongoose": "^6.3.6",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.3"
   },
